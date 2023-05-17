@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+body {
+  background: #ccc;
+  font-family: "Orbitron", sans-serif;
+}
+header {
+  display: inline;
+  text-align: center;
+  width: 100%;
+}
+
+.back {
+  width: 400px;
+  height: 500px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.goku {
+  height: 400px;
+  width: 300px;
+  background-image: url("./goku.png");
+  background-size: cover;
+  animation: animar 1s infinite alternate;
+}
+
+.sombra {
+  height: 100px;
+  width: 200px;
+  background: #333;
+  border-radius: 50%;
+  transform: rotateX(-70deg);
+  animation: sombra 1s infinite alternate;
+}
+
+@keyframes animar {
+  to {
+    transform: translateY(-50px);
+  }
+}
+@keyframes sombra {
+  to {
+    transform: scale(0.6) rotateX(-70deg);
+    opacity: 0.2;
+  }
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 0;
+  bottom: 400px;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+}
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 10px;
+  width: 300px;
+  height: 100px;
+  background: #356ea9;
+  border-radius: 32px;
+}
+.buttons {
+  display: inline;
+}
+
+button {
+  display: inline;
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #dbdbdb;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: #090909;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 16px;
+  resize: none;
+  background: transparent;
+  color: #000;
+}
+
+textarea::placeholder {
+  color: #000;
+  text-transform: uppercase;
+}
+.container-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+  width: 300px;
+  height: 100px;
+  background: #e65810;
+  border-radius: 32px;
+  z-index: 2;
+}
+
+#mostrar_mensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 16px;
+  resize: none;
+  background: transparent;
+  color: #000000;
+}
+
+#copiar {
+  display: inline;
+  font-size: 13px;
+  font-weight: 0;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #267bf3;
+  border-radius: 10px;
+  background-color: #3385ea;
+  color: #fff;
+  transition: all 0.2s ease;
+  color: #000000;
+  font-family: monospace;
+}
+#copiar:hover {
+  background-color: #bf2e06;
+  border-color: #ff9900;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) and (min-height: 1384px) and (max-width: 1024px) and (max-height: 1366px) {
+  body {
+    background: #eee;
+  }
+
+  .back {
+    width: 600px;
+    height: 700px;
+    margin: 100px auto;
+  }
+
+  .goku {
+    height: 500px;
+    width: 400px;
+  }
+  .container {
+    display: block;
+    font-size: 5px;
+  }
+
+  .container-1 {
+    width: 500px;
+    height: 120px;
+    font-size: 10px;
+  }
+
+  .container-2 {
+    width: 500px;
+    height: 120px;
+  }
+
+  #mostrar_mensaje {
+    font-size: 24px;
+  }
+
+  .buttons {
+    font-size: 8px;
+  }
+
+  #copiar {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1715px) {
+  .back {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 500px;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .goku {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 50px;
+    align-items: center;
+  }
+  .container-1 {
+    display: block;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 8px;
+    margin-bottom: 20px;
+  }
+  .container-2 {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 8px;
+    right: 25px;
+  }
+  .buttons {
+    display: inline;
+    font-size: 6px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+
+  button {
+    font-size: 6px;
+    border-radius: 5px;
+  }
+  #copiar {
+    position: relative;
+    font-size: 12px;
+    top: 40px;
+  }
+}
