@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    background-color: #edc67f;
+}
+.container-principal {
+    position: relative;
+    margin: auto;
+    top: 15rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #1fcf22;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+
+}
+.container{
+    background-color: #1fcf22;
+
+}
+
+.container h1 {
+
+    margin: auto;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #1fcf22;
+
+}
+
+
+
+#value{
+    padding: 0px;
+    position: absolute;
+    top: 60px; left: 65px;
+    font-family: 'press start 2P';
+    font-size: 80px;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    background-color: #1fcf22;
+   
+}
+
+.button-container{
+    position:absolute;
+    left: 13%;
+    bottom: 0% ;
+    padding: 5px;
+    margin: auto;
+    background-color: #1fcf22;
+}
+
+#btn-decrease{
+    width: 100px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 20px;
+    border-radius: 10px;
+    background-color: #c05a55; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    
+}
+#btn-decrease:hover{
+    background-color: #bc736f; ;
+}
+
+#btn-reset{
+    width: 100px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow: 20px;
+    border-radius: 10px;
+    background-color: #4a4adc; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 10px;
+    
+
+
+}
+#btn-reset:hover{
+    background-color:#6b6bd6 ;
+}
+
+#btn-increase{
+    width: 100px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    text-shadow: 20px;
+    border-radius: 10px;
+    background-color: #53e38d; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    
+
+}
+#btn-increase:hover{
+    background-color: #77dfa1;
+}
